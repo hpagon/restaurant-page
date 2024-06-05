@@ -1,6 +1,22 @@
+:root {
+    --background-color: #11001C;
+    --background-color-two: #26262C;
+    --background-color-three: #190028;
+    --font-color-one: #32004F;
+    --font-color-two: #FCFBF4;
+}
+
 * {
   margin: 0px;
   padding: 0px;
+  color: var(--font-color-two);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color-two);
 }
 
 /* header styles */
@@ -8,13 +24,34 @@ header {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0px 10%;
+    background-color: var(--background-color);
+    color: var(--font-color-two);
+    /* box-shadow: 0px 0px 30px yellow; */
 }
 
 header div {
     display: flex;
+    /* background-color: var(--background-color-two); */
 }
 
 header div img {
   height: 50px;
+}
+
+/* general styles*/
+#content {
+    width: 100%;
+}
+
+/* Homepage styles */
+#content div div img {
+    height: 400px;
+}
+.card {
+    /* background-color: var(--background-color); */
+}
+
+.block:nth-child(odd) {
+    background-color: var(--background-color);
 }
