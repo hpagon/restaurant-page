@@ -2,6 +2,7 @@ import initial from "./initial.js";
 import menu from "./menu.js";
 import about from "./about.js";
 import "./style.css";
+import html from "./index.html"
 
 class Controller {
   #buttons = document.querySelectorAll("header nav button");
@@ -14,6 +15,7 @@ class Controller {
         this.clear();
         this.unfreeze();
         this.freeze(e.target);
+        //load in new page contents
         switch (e.target.innerHTML) {
           case "Home":
             initial();
