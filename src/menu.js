@@ -3,7 +3,7 @@ export default function () {
     const content = document.querySelector("#content");
     
     let homepage = document.createElement("div");
-    homepage.innerHTML = "This is the homepage.";
+    homepage.innerHTML = "This is the Menu page.";
 
     content.appendChild(homepage);
 }
