@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("./assets/Oswald-Bold.ttf") format("truetype"),
+    url("./assets/Oswald-ExtraLight.ttf") format("truetype"),
+    url("./assets/Oswald-Light.ttf") format("truetype"),
+    url("./assets/Oswald-Medium.ttf") format("truetype"),
+    url("./assets/Oswald-Regular.ttf") format("truetype"),
+    url("./assets/Oswald-SemiBold.ttf") format("truetype");
+}
+
 :root {
   --background-color: #11001c;
   --background-color-two: #190028;
@@ -6,6 +16,7 @@
   --font-color-two: #fcfbf4;
   --font-color-three: #960c94;
   --font-color-four: #800b7e;
+  font-family: 'Oswald';
 }
 
 * {
@@ -62,7 +73,7 @@ header div img {
 /* Homepage styles */
 #content div .block:nth-child(1) img {
   height: 80%;
-  box-shadow: 0px 0px 5px yellow; 
+  box-shadow: 0px 0px 5px yellow;
 }
 
 #content div .block:nth-child(n) {
@@ -95,7 +106,7 @@ header div img {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   background-color: var(--background-color-three);
   box-shadow: 0px 0px 5px yellow;
 }
@@ -153,7 +164,7 @@ footer {
 }
 
 footer div:nth-child(n + 2) {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
 footer div ul li {
