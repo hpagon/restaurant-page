@@ -1,7 +1,7 @@
 :root {
     --background-color: #11001C;
-    --background-color-two: #26262C;
-    --background-color-three: #190028;
+    --background-color-two: #190028;
+    --background-color-three: #26262C;
     --font-color-one: #32004F;
     --font-color-two: #FCFBF4;
 }
@@ -23,11 +23,13 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 80%;
-    padding: 0px 10%;
+    padding: 10px 10%;
     background-color: var(--background-color);
     color: var(--font-color-two);
-    /* box-shadow: 0px 0px 30px yellow; */
+    position: fixed;
+    box-shadow: 0px 0px 15px yellow;
 }
 
 header div {
@@ -46,12 +48,93 @@ header div img {
 
 /* Homepage styles */
 #content div div img {
-    height: 400px;
+    height: 80%;
+    /* height: 400px; */
 }
+
+#content div .block:nth-child(n) {
+    padding: 40px 0px;
+}
+
+#content div .block:nth-child(1) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: max(95vh);
+}
+
+#content div .block:nth-child(1) h2 {
+    width: 500px;
+    font-size: 52px;
+}
+
+#content div .block:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly
+}
+
+#content div .block:nth-child(2) div {
+    height: 200px;
+    width: 300px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 18px;
+    background-color: var(--background-color-three);
+}
+
+#content div .block:nth-child(3) div {
+    height: 300px;
+    width: 40%;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    font-style: italic;
+}
+
+#content div .block:nth-child(3) div p:nth-child(2) {
+    margin-top: 15px;
+    font-size: 18px;
+    font-style: normal;
+}
+
+#content div .block:nth-child(3) div:nth-child(1) {
+    margin-left: 10%;
+}   
+
+#content div .block:nth-child(3) div:nth-child(2) {
+    margin-left: 50%;
+    margin-top: -10%;
+}
+
+/* #content div .block:nth-child(2) div:nth-child(-n + 2) {
+    border-right: 1px solid yellow;
+} */
+
+#content div .block:nth-child(2) div img{
+    height: 70px;
+    width: 70px;
+}
+
 .card {
     /* background-color: var(--background-color); */
 }
 
-.block:nth-child(odd) {
+.block:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+/* footer styles */
+footer {
+    width: 80%;
+    padding: 0px 10%;
     background-color: var(--background-color);
 }
