@@ -2,7 +2,7 @@ import initial from "./initial.js";
 import menu from "./menu.js";
 import about from "./about.js";
 import "./style.css";
-import html from "./index.html"
+import html from "./index.html";
 
 class Controller {
   #buttons = document.querySelectorAll("header nav button");
@@ -40,9 +40,11 @@ class Controller {
   freeze(button) {
     button.setAttribute("disabled", true);
     this.#disabledButton = button;
+    button.classList.add("selected");
   }
   //allow clicking funtionality on button again
   unfreeze() {
+    this.#disabledButton.classList.remove("selected");
     this.#disabledButton.removeAttribute("disabled");
   }
 }

@@ -1,5 +1,5 @@
 import hero from "./assets/milk-bottle-hero.jpg";
-import badge from "./assets/badge.png"
+import badge from "./assets/badge.png";
 import computer from "./assets/3d-computer.png";
 import deliveryBike from "./assets/delivery-bike.png";
 //exports a function used to create elements in home page
@@ -31,19 +31,19 @@ export default function () {
   startBlock.classList.add("block");
   middleBlock.classList.add("block");
   testimonies.classList.add("block");
-  testimony1.classList.add("card");
-  testimony2.classList.add("card");
   //add content
   heroImage.src = hero;
   smallHeader.innerHTML =
     "Your one stop shop for all your late night milk cravings . . .";
-    infoCard1Image.src = badge;
+  infoCard1Image.src = badge;
   infoCard2Image.src = computer;
   infoCard3Image.src = deliveryBike;
   testimony1text.innerHTML = `"Nothing I had ever drunk had ever tasted like that before: rich and warm and perfectly happy in my mouth. I remembered that milk after I had forgotten about everything else."`;
   testimony2text.innerHTML = `“And chances are if he asks you for a glass of milk, he's going to want a cookie to go with it.”`;
-  testimony1author.innerHTML = "- The Ocean at the End of the Lane, Neil Gaiman"
-  testimony2author.innerHTML = "- If You Give a Mouse a Cookie, Laura Joffe Numeroff"
+  testimony1author.innerHTML =
+    "- The Ocean at the End of the Lane, Neil Gaiman";
+  testimony2author.innerHTML =
+    "- If You Give a Mouse a Cookie, Laura Joffe Numeroff";
   //add elements to content div
   startBlock.append(smallHeader, heroImage);
   infoCard1text.innerHTML = "Award winning flavor and guaranteed freshness.";
