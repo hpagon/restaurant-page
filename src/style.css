@@ -141,10 +141,6 @@ header div img {
   margin-top: -10%;
 }
 
-/* #content div .block:nth-child(2) div:nth-child(-n + 2) {
-    border-right: 1px solid yellow;
-} */
-
 #content div .block:nth-child(2) div img {
   height: 70px;
   width: 70px;
@@ -152,6 +148,56 @@ header div img {
 
 .block:nth-child(even) {
   background-color: var(--background-color);
+}
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu h2 {
+    margin-top: 100px;
+    font-size: 45px;
+}
+
+.menu div {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 30px;
+    justify-content: center;
+    box-shadow: 0px 0px 5px yellow;
+    padding: 30px;
+    background-color: var(--background-color);
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.menu div div {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    background-color: var(--background-color-three);
+    box-shadow: 0px 0px 0px yellow;
+    border-radius: 12px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.menu div div img {
+    height: 70px;
+    width: 70px;
+    background-color: var(--font-color-two);
+    border-radius: 50%;
+}
+
+.menu div div:nth-child(1) img {
+    
 }
 
 /* footer styles */
