@@ -16,7 +16,7 @@
   --font-color-two: #fcfbf4;
   --font-color-three: #960c94;
   --font-color-four: #800b7e;
-  font-family: 'Oswald';
+  font-family: "Oswald";
 }
 
 * {
@@ -152,52 +152,112 @@ header div img {
 
 /* Menu Styles */
 .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu h2 {
-    margin-top: 100px;
-    font-size: 45px;
+  margin-top: 100px;
+  font-size: 45px;
 }
 
 .menu div {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
-    gap: 30px;
-    justify-content: center;
-    box-shadow: 0px 0px 5px yellow;
-    padding: 30px;
-    background-color: var(--background-color);
-    margin-top: 2%;
-    margin-bottom: 5%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 30px;
+  justify-content: center;
+  box-shadow: 0px 0px 5px yellow;
+  padding: 30px;
+  background-color: var(--background-color);
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
 
 .menu div div {
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 250px;
-    width: 100%;
-    background-color: var(--background-color-three);
-    box-shadow: 0px 0px 0px yellow;
-    border-radius: 12px;
-    margin-bottom: 0px;
-    font-size: 20px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background-color: var(--background-color-three);
+  box-shadow: 0px 0px 0px yellow;
+  border-radius: 12px;
+  margin-bottom: 0px;
+  font-size: 20px;
 }
 
 .menu div div img {
-    height: 70px;
-    width: 70px;
-    background-color: var(--font-color-two);
-    border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: var(--font-color-two);
+  border-radius: 50%;
 }
 
-.menu div div:nth-child(1) img {
-    
+/* about page styles */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about div {
+  width: 80%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  background-color: var(--background-color);
+  padding: 30px;
+  box-shadow: 0px 0px 5px yellow;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about h2 {
+  font-size: 45px;
+  margin-top: 100px;
+}
+
+.about div .about-block {
+  padding: 0px;
+  margin: 0px;
+  width: 95%;
+  display: inline;
+  box-shadow: none;
+}
+
+.about h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.about p {
+  margin-top: 5px;
+  text-indent: 2rem;
+  font-size: 1.1rem;
+  /* color: gray; */
+  /* font-style:oblique; */
+}
+
+.about img {
+  height: 400px;
+  width: 400px;
+  box-shadow: 0px 0px 5px yellow;
+  margin: 0 2rem 2rem 0;
+  float: left;
+}
+
+.about-block img:nth-child(n + 2) {
+    float: right;
+    width: 300px;
+    margin: 2rem 0 0 2rem;
+}
+
+.about .about-block img:nth-child(2) {
+  /* width: 20px; */
 }
 
 /* footer styles */

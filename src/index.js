@@ -8,7 +8,7 @@ class Controller {
   #buttons = document.querySelectorAll("header nav button");
   #content = document.querySelector("#content");
 //   #disabledButton = this.#buttons[0];
-  #disabledButton = this.#buttons[1];
+  #disabledButton = this.#buttons[2];
 
   constructor() {
     for (const button of this.#buttons) {
@@ -31,7 +31,7 @@ class Controller {
       });
     }
     // initial();
-    menu();
+    about();
     this.freeze(this.#disabledButton);
   }
   //clears the content div
